@@ -7,6 +7,7 @@
     <title>VCare Services Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c457cbbb92.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -38,7 +39,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col items-center min-h-screen px-5 py-5 md:px-20 md:py-20 gap-10">
+    <section data-aos="fade-in" class="flex flex-col items-center min-h-screen px-5 py-5 md:px-20 md:py-20 gap-10">
         <div class="flex flex-col items-center gap-5">
             <h3 class="self-start text-[#4FA097] text-xl md:text-2xl lg:text-4xl"><i class="fa-solid fa-microscope"></i>&nbsp; VCare
                 Labs</h3>
@@ -52,7 +53,7 @@
                         patient care and informed medical decisions. Trust VCare Labs for dependable results in a timely
                         manner, setting a new standard in healthcare diagnostics.</p>
                 </div>
-                <a href="Labs.html" class="w-1/2 md:w-1/3 px-6 py-4 text-xl text-center text-white bg-[#FCC201] rounded-lg mt-2">Know More</a>
+                <a href="Labs.html" class="w-1/2 md:w-1/3 px-6 py-4 text-xl text-center text-white bg-[#FCC201] rounded-lg mt-2 hover:bg-[#c9c043] transition-all ease-in-out duration-300">Know More</a>
             </article>
             <div class="swiper w-[375px] h-[187.5px] sm:w-[600px] sm:h-[300px] md:w-[800px] md:h-[400px]">
                 <!-- Additional required wrapper -->
@@ -82,7 +83,7 @@
                         is committed to making healthcare accessible to all, with a reputation built on trust and
                         reliability.</p>
                 </div>
-                <a href="pharmacy.html" class="w-1/2 md:w-1/3 px-6 py-4 text-xl text-center text-white bg-[#FCC201] rounded-lg mt-2">Know More</a>
+                <a href="pharmacy.html" class="w-1/2 md:w-1/3 px-6 py-4 text-xl text-center text-white bg-[#FCC201] rounded-lg mt-2 hover:bg-[#c9c043] transition-all ease-in-out duration-300">Know More</a>
             </article>
             <div class="swiper w-[375px] h-[187.5px] sm:w-[600px] sm:h-[300px] md:w-[800px] md:h-[400px]">
                 <!-- Additional required wrapper -->
@@ -105,7 +106,7 @@
                 <div class="flex flex-col gap-5 items-center sm:items-start">
                     <p class="text-sm md:text-lg lg:text-xl">Embark on your spiritual journey with VCare Groups' Haj and Umrah Services, where excellence meets commitment. Our dedication to providing unparalleled services is reflected in our rankings, prestigious awards, and groundbreaking research and development initiatives. We take pride in our commitment to continuous improvement and innovation in the field of pilgrimage services. Explore the statistics of our publications, showcasing our contributions to the field and our commitment to ensuring a seamless and spiritually enriching experience for every pilgrim. Choose VCare for a journey of a lifetime, supported by a legacy of excellence</p>
                 </div>
-                <a href="h&u.html" class="w-1/2 md:w-1/3 px-6 py-4 text-xl text-center text-white bg-[#FCC201] rounded-lg mt-2">Know More</a>
+                <a href="h&u.html" class="w-1/2 md:w-1/3 px-6 py-4 text-xl text-center text-white bg-[#FCC201] rounded-lg mt-2 hover:bg-[#c9c043] transition-all ease-in-out duration-300">Know More</a>
             </article>
             <div class="swiper w-[375px] h-[187.5px] sm:w-[600px] sm:h-[300px] md:w-[800px] md:h-[400px]">
                 <!-- Additional required wrapper -->
@@ -142,6 +143,10 @@
             },
         });
     </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
