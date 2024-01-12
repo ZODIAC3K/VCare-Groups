@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'AltoneTrial-Reg';
+      src: url('fonts/AltoneTrial-Regular.ttf'); /* IE9 Compat Modes */
+      font-weight: 400;
+      font-style: bold;
+  }
+  @font-face {
+    font-family: 'AltoneTrial-Reg-2';
+      src: url('fonts/AltoneTrial-RegularOblique.ttf'); /* IE9 Compat Modes */
+      font-weight: 400;
+      font-style: bold;
+  }
+  @font-face {
+    font-family: 'AltoneTrial-Bold';
+      src: url('fonts/AltoneTrial-Bold.ttf'); /* IE9 Compat Modes */
+      font-weight: 400;
+      font-style: bold;
+  }
+  @font-face {
+    font-family: 'AltoneTrial-Bold-2';
+      src: url('fonts/AltoneTrial-RegularOblique.ttf'); /* IE9 Compat Modes */
+      font-weight: 400;
+      font-style: bold;
+  }
