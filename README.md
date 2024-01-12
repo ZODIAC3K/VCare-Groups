@@ -9,6 +9,7 @@ cd Serve
 ## Step 2: Initialize Node.js
 
 npm init
+npm start
 
 ## Step 3: Start the Server
 
