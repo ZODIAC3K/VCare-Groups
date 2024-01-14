@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Service_layout from '../components/Service_layout.jsx';
 const Vcare_service = () => {
   return (
-    <div>Vcare_service</div>
-    // Harsh wala here!
+    <React.Fragment>
+      <Service_layout/>
+    </React.Fragment>
   )
 }
 
