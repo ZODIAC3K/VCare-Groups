@@ -84,7 +84,7 @@ const Login_Signup = () => {
   },[isLoggedIn, navigate]);
 
 	return (
-		<div>
+		<div className='.body'>
       <h2 className='text-[#4FA097] text-[32px]' >VCARE LABS <p className='#333'>Your Wellness, Our Priority: Delivering Health to Your Doorstep!Possibilities</p></h2>
       <div className={`container ${isRegistered? "right-panel-active": ""}`} id="container">
         <div className="form-container sign-up-container">

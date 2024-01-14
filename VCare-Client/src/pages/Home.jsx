@@ -28,7 +28,7 @@ const Home = () => {
         </div>
       </section>
       <div class="flex flex-col md:flex-row w-full justify-evenly items-center lg:mt-[-32vh]">
-      <Card_home/>
+        <Card_home/>
       </div>
     </React.Fragment>
   )
