@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Card_home from '../components/Card_Home'
-
-
+import { AuthContext } from '../App'
 
 
 const Home = () => {
