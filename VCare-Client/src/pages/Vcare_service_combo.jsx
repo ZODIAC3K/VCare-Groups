@@ -1,11 +1,9 @@
 import React from 'react'
-import Service_Card from '../components/Service_Card';
 
 const Vcare_service_combo = () => {
   return (
-    <React.Fragment>
-      <Service_Card />
-    </React.Fragment>
+    <div>Vcare_service_combo</div>
+    // Sam wala here!
   )
 }
 
