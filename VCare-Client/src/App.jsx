@@ -1,30 +1,37 @@
+import { createContext, useState } from 'react'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
+import Login_Signup from './pages/Login_Signup'
+
+export const AuthContext = createContext(false);
 
 function App() {
+  const [user, setUser] = useState(false);
+
   const router = createBrowserRouter([{
-    path: "/",
-    element: <Home />,
-    children:[
-      {
-        path: "login",
-        // add element when made
-      },
-      {
-        path: "services",
-        // add element when made
-        children: [
-          {
-            path: ':service'
-            // add element when made
-          }
-        ]
-      },
-    ]
-  }])
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "login",
+      element: <Login_Signup />,
+    },
+    {
+      path: "services",
+      element: <Login_Signup />,
+      children: [
+        {
+          path: ':service',
+          // add element when made
+        }
+      ]
+    },
+  ])
 
   return (
-    <RouterProvider router={router}/>
+    <AuthContext.Provider value={[user, setUser]}>
+      <RouterProvider router={router}/>
+    </AuthContext.Provider>
   )
 }
 
