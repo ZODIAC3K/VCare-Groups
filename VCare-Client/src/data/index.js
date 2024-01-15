@@ -48,3 +48,53 @@ export const services = [
         link:"/services/h&u"
     },
 ]
+
+export const labs =
+{
+    images: [
+        "img/i1-wide.jpg",
+        "img/i3.jpg",
+        "img/i4.jpg",
+        "img/i5.jpg",
+        "img/i6.jpg",
+        "img/i2-wide.jpg",
+        "img/i7.jpg",
+        "img/i8.jpg",
+        "img/d1.jpg",
+        "img/i9.jpg",
+    ],
+    title: "VCARE LABS",
+    description: "Discover a wide range of pharmaceutical products, from prescription medications to over-the-counter essentials.",
+}
+
+export const pharmacy = {
+    images: [
+        "img/p2.jpg",
+        "img/p4.jpg",
+        "img/i4.jpg",
+        "img/p5.jpg",
+        "img/p3.jpg",
+        "img/i2-wide.jpg",
+        "img/i7.jpg",
+        "img/i8.jpg",
+        "img/p1.jpg",
+        "img/i9.jpg",
+    ],
+    title: "VCARE PHARMACY",
+    description: "Discover a wide range of pharmaceutical products, from prescription medications to over-the-counter essentials.",
+}
+
+export const h_u = {
+    images: [
+        "img/i4.jpg",
+        "img/i5.jpg",
+        "img/hu3.jpg",
+        "img/i2-wide.jpg",
+        "img/i7.jpg",
+        "img/i8.jpg",
+        "img/d1.jpg",
+        "img/i9.jpg",
+    ],
+    title: "HAJ & UMRAH SERVICES",
+    description: "Discover a wide range of pharmaceutical products, from prescription medications to over-the-counter essentials.",
+}
