@@ -23,8 +23,8 @@ const Card_Home = ({image, description, link}) => {
 
 export default Card_Home
 
-Card_Home.propTypes = {
-  image: Proptypes.string,
-  description: Proptypes.string,
-  link : Proptypes.string,
-}
+// Card_Home.propTypes = {
+//   image: Proptypes.string,
+//   description: Proptypes.string,
+//   link : Proptypes.string,
+// }

@@ -101,6 +101,6 @@ const Gallary = ({images}) => {
 
 export default Gallary
 
-Gallary.propTypes = {
-  images: Proptypes.arrayOf(Proptypes.string),
-}
+// Gallary.propTypes = {
+//   images: Proptypes.arrayOf(Proptypes.string),
+// }

@@ -5,17 +5,17 @@ const Nav = () => {
   return (
     <React.Fragment>
       <div>
-        <ul id="navlinks" class="flex justify-center m-4 pl-6 pr-6 bg-[#84cccb] rounded-[200px] text-lg bg-opacity-45 font-500">
-          <li class="m-2">
+        <ul id="navlinks" className="flex justify-center m-4 pl-6 pr-6 bg-[#84cccb] rounded-[200px] text-lg bg-opacity-45 font-500">
+          <li className="m-2">
             <Link to='/'>Home</Link>
           </li>
-          <li class="m-2">
+          <li className="m-2">
           <Link to='/'>About Us</Link>
           </li>
-          <li class="m-2">
+          <li className="m-2">
           <Link to='/services'>Services</Link>
           </li>
-          <li class="m-2">
+          <li className="m-2">
           <Link to='/'>Contact</Link>
           </li>
         </ul>

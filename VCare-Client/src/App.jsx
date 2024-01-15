@@ -21,12 +21,17 @@ function App() {
     {
       path: "services",
       element: <Vcare_service_combo />,
-      children: [
-        {
-          path: ':service',
-          element: <Vcare_service />
-        }
-      ]
+    },
+    {
+      path: "labs",
+      element: <Vcare_service location={"labs"}/>
+    },
+    {
+      path: "pharmacy",
+      element: <Vcare_service location={"pharmacy"}/>
+    },{
+      path: "h&u",
+      element: <Vcare_service location={"h&u"}/>
     },
   ])
 
