@@ -73,8 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         body: JSON.stringify({ name, email, password }),
       })
-      .then(response => response.json())
+      .then(response => {response.json(); console.log(response.data)})
       .then(data => {
+        console.log(data);
         if (data.success) {
           alert('User registered successfully. You can now log in.');
         } else {
