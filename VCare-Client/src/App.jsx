@@ -1,9 +1,11 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import Login_Signup from './pages/Login_Signup'
 import Vcare_service_combo from './pages/Vcare_service_combo'
 import Vcare_service from './pages/Vcare_service'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export const AuthContext = createContext(false);
 
@@ -34,6 +36,12 @@ function App() {
       element: <Vcare_service location={"h&u"}/>
     },
   ])
+
+
+useEffect(() => {
+  AOS.init();
+},[]);
+
 
   return (
     <AuthContext.Provider value={[user, setUser]}>

@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     function authenticateUser(email, password) {
-      const endpoint = 'http://localhost:3000/login';
+      const endpoint = 'https://v-care-groups-backend.vercel.app/login';
   
       fetch(endpoint, {
         method: 'POST',
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(data => {
         if (data.success) {
           localStorage.setItem('userLogin', JSON.stringify(data));
-          window.location.href = '/home.html';
+          window.location.href = '/index.html';
         } else {
           alert('Authentication failed. User not found!');
         }
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     function registerUser(name, email, password) {
         console.log(name, email, password);
-      const endpoint = 'http://localhost:3000/register';
+      const endpoint = 'https://v-care-groups-backend.vercel.app/register';
   
       fetch(endpoint, {
         method: 'POST',
@@ -73,8 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         body: JSON.stringify({ name, email, password }),
       })
-      .then(response => response.json())
+      .then(response => {response.json(); console.log(response.data)})
       .then(data => {
+        console.log(data);
         if (data.success) {
           alert('User registered successfully. You can now log in.');
         } else {
