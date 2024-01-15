@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     function authenticateUser(email, password) {
-      const endpoint = 'http://localhost:3000/login';
+      const endpoint = 'https://v-care-groups-backend.vercel.app/login';
   
       fetch(endpoint, {
         method: 'POST',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     function registerUser(name, email, password) {
         console.log(name, email, password);
-      const endpoint = 'http://localhost:3000/register';
+      const endpoint = 'https://v-care-groups-backend.vercel.app/register';
   
       fetch(endpoint, {
         method: 'POST',
