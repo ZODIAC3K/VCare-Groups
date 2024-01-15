@@ -1,73 +1,94 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 import '../pages/css/gallary.css'
 
-const Gallary = (props) => {
+const Gallary = ({images}) => {
   return (
     <React.Fragment>
-      <section class="ag-photo-gallery-block mt-10">
-        <div class="ag-format-container">
-          <div class="ag-photo-gallery_list-hu">
+      <section className="ag-photo-gallery-block mt-10">
+        <div className="ag-format-container">
+          <div className="ag-photo-gallery_list-hu">
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/i4.jpg" data-fancybox="gallery">
-                  <img src="img/hu1.jpg" class="ag-photo-gallery_img" alt="" />
+            {images.length > 8 ? (
+          <>
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__wide">
+              <figure  className="ag-photo-gallery_figure">
+                <a href={images[8]} data-fancybox="gallery">
+                  <img src={images[8]} className="ag-photo-gallery_img" alt="" />
+                </a>
+              </figure>
+            </div>
+      
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[9]} data-fancybox="gallery">
+                  <img src={images[9]} className="ag-photo-gallery_img" alt="" />
+                </a>
+              </figure>
+            </div>
+          </>
+              ) : null
+            }
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[0]} data-fancybox="gallery">
+                  <img src={images[0]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__middle">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/i5.jpg" data-fancybox="gallery">
-                  <img src="img/hu2.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__middle">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[1]} data-fancybox="gallery">
+                  <img src={images[1]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/hu3.jpg" data-fancybox="gallery">
-                  <img src="img/hu3.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[2]} data-fancybox="gallery">
+                  <img src={images[2]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__wide">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/i2-wide.jpg" data-fancybox="gallery">
-                  <img src="img/hu4.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__wide">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[3]} data-fancybox="gallery">
+                  <img src={images[3]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/i7.jpg" data-fancybox="gallery">
-                  <img src="img/hu5.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[4]} data-fancybox="gallery">
+                  <img src={images[4]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/i8.jpg" data-fancybox="gallery">
-                  <img src="img/hu6.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[5]} data-fancybox="gallery">
+                  <img src={images[5]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__middle">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/d1.jpg" data-fancybox="gallery">
-                  <img src="img/hu7.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__middle">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[6]} data-fancybox="gallery">
+                  <img src={images[6]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
-              <figure class="ag-photo-gallery_figure">
-                <a href="img/i9.jpg" data-fancybox="gallery">
-                  <img src="img/hu8.jpg" class="ag-photo-gallery_img" alt="" />
+            <div data-aos="zoom-in" data-aos-duration="375" data-aos-easing="ease-in-out" className="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+              <figure className="ag-photo-gallery_figure">
+                <a href={images[7]} data-fancybox="gallery">
+                  <img src={images[7]} className="ag-photo-gallery_img" alt="" />
                 </a>
               </figure>
             </div>
@@ -79,3 +100,7 @@ const Gallary = (props) => {
 }
 
 export default Gallary
+
+Gallary.propTypes = {
+  images: Proptypes.arrayOf(Proptypes.string),
+}
