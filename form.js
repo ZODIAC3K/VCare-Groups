@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(data => {
         if (data.success) {
           localStorage.setItem('userLogin', JSON.stringify(data));
-          window.location.href = '/';
+          window.location.href = '/index.html';
         } else {
           alert('Authentication failed. User not found!');
         }
