@@ -8,6 +8,13 @@ const port = 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use("/", (req, res) => {
+  res.send("Backend is running");
+});
+
+
+
 const url = 'mongodb+srv://zodiac3k:Rockon-30@cluster0.v3cd9pm.mongodb.net/?retryWrites=true&w=majority';  // This is my testing mongodb URI change it to yours
 const dbName = 'testing';
 
