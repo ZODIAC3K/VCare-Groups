@@ -1,14 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
     <React.Fragment>
       <div>
         <ul id="navlinks" class="flex justify-center m-4 pl-6 pr-6 bg-[#84cccb] rounded-[200px] text-lg bg-opacity-45 font-500">
-          <li class="m-2">Home</li>
-          <li class="m-2">About Us</li>
-          <li class="m-2">Services</li>
-          <li class="m-2">Contact</li>
+          <li class="m-2">
+            <Link to='/'>Home</Link>
+          </li>
+          <li class="m-2">
+          <Link to='/'>About Us</Link>
+          </li>
+          <li class="m-2">
+          <Link to='/services'>Services</Link>
+          </li>
+          <li class="m-2">
+          <Link to='/'>Contact</Link>
+          </li>
         </ul>
       </div>
     </React.Fragment>

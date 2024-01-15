@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav_bar from './Nav_bar'
-import Footer from './Footer'
 
 
 const Service_Card = (props) => {
@@ -31,21 +30,6 @@ const Service_Card = (props) => {
         </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        {/* <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            slidesPerViw: 'auto',
-            spaceBetween: 30,
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script> */}
-        <Footer/>
     </React.Fragment>
   )
 }
